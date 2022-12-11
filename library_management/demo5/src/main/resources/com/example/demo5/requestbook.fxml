@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo5.requestbookController">
+   <children>
+      <AnchorPane layoutX="103.0" layoutY="72.0" prefHeight="256.0" prefWidth="370.0" style="-fx-background-color: #000;">
+         <children>
+            <Label layoutX="52.0" layoutY="77.0" prefHeight="26.0" prefWidth="114.0" text="Book Name    :" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="59.0" layoutY="120.0" />
+            <Label layoutX="52.0" layoutY="124.0" prefHeight="26.0" prefWidth="114.0" text="Author Name :" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="requestbookname" layoutX="166.0" layoutY="78.0" prefHeight="25.0" prefWidth="180.0" promptText="Enter Book Name" />
+            <TextField fx:id="requestauthorname" layoutX="166.0" layoutY="125.0" prefHeight="25.0" prefWidth="180.0" promptText="Enter Author Name" />
+            <Button fx:id="submitforrequest" layoutX="154.0" layoutY="193.0" mnemonicParsing="false" onAction="#requestsubmitOnAction" style="-fx-background-color: #fff;" text="SUBMIT">
+               <font>
+                  <Font name="Microsoft JhengHei Bold" size="12.0" />
+               </font>
+            </Button>
+            <Label fx:id="messageaftersubmit" layoutX="99.0" layoutY="32.0" prefHeight="17.0" prefWidth="192.0" textFill="RED" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="backtobooks" layoutX="50.0" layoutY="354.0" mnemonicParsing="false" onAction="#backtobooksOnAction" text="back to books">
+         <font>
+            <Font size="7.0" />
+         </font>
+      </Button>
+      <Label layoutX="188.0" layoutY="46.0" text="Request for a BOOK 📗" textFill="WHITE">
+         <font>
+            <Font name="Microsoft PhagsPa" size="19.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
